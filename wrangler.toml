@@ -1,0 +1,18 @@
+# FitCircle SmartChat MVP - Cloudflare Worker Configuration
+# 請將 database_id 替換為您在 Cloudflare Dashboard 建立的 D1 資料庫 ID
+
+name = "fitcircle-api"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# D1 Database 設定
+# 請在 Cloudflare Dashboard 建立 D1 資料庫後，將 database_id 填入下方
+[[d1_databases]]
+binding = "DB"
+database_name = "fitcircle-db"
+database_id = "YOUR_DATABASE_ID_HERE"
+
+# 如需設定環境變數，可在下方加入
+# [vars]
+# ENVIRONMENT = "production"
+
